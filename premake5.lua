@@ -45,6 +45,16 @@ local function set_workspace()
         has_option = true
     end
 
+    if _OPTIONS["gles2"] then
+        defines { "_JGFX_GLES2" }
+        has_option = true
+    end
+
+    if _OPTIONS["egl"] then
+        defines { "_JGFX_EGL" }
+        has_option = true
+    end
+
     if _OPTIONS["opengl"] then
         defines { "_JGFX_OPENGL" }
         has_option = true

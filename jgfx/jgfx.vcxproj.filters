@@ -7,6 +7,9 @@
     <Filter Include="backends\gl3">
       <UniqueIdentifier>{150F0619-0172-95BD-AAF7-CD7396396140}</UniqueIdentifier>
     </Filter>
+    <Filter Include="backends\gl3\EGL">
+      <UniqueIdentifier>{5C860C3D-487F-2B8F-71B1-10145D090B9B}</UniqueIdentifier>
+    </Filter>
     <Filter Include="backends\gl3\KHR">
       <UniqueIdentifier>{09A00C3D-F598-2B8F-1ECB-10140A230B9B}</UniqueIdentifier>
     </Filter>
@@ -18,8 +21,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\jgfx\backends\gl3\EGL\eglplatform.h">
+      <Filter>backends\gl3\EGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\jgfx\backends\gl3\KHR\khrplatform.h">
       <Filter>backends\gl3\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jgfx\backends\gl3\glad\egl.h">
+      <Filter>backends\gl3\glad</Filter>
     </ClInclude>
     <ClInclude Include="src\jgfx\backends\gl3\glad\gl.h">
       <Filter>backends\gl3\glad</Filter>
@@ -27,6 +36,9 @@
     <ClInclude Include="src\jgfx\jgfx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\jgfx\backends\gl3\src\egl.c">
+      <Filter>backends\gl3\src</Filter>
+    </ClCompile>
     <ClCompile Include="src\jgfx\backends\gl3\src\gl.c">
       <Filter>backends\gl3\src</Filter>
     </ClCompile>

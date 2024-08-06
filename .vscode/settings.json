@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "jgfx.h": "c",
+        "gl.h": "c"
+    }
+}
