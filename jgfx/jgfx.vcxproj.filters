@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="backends">
+      <UniqueIdentifier>{00057006-ECD1-CA11-15EB-B8B9011700A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backends\gl3">
+      <UniqueIdentifier>{150F0619-0172-95BD-AAF7-CD7396396140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backends\gl3\KHR">
+      <UniqueIdentifier>{09A00C3D-F598-2B8F-1ECB-10140A230B9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backends\gl3\glad">
+      <UniqueIdentifier>{3C97B0DE-A8AD-AE74-F124-3A965D7A7FFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backends\gl3\src">
+      <UniqueIdentifier>{AC4F0D3D-9848-2C8F-C17A-1114ADD20B9B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\jgfx\backends\gl3\KHR\khrplatform.h">
+      <Filter>backends\gl3\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jgfx\backends\gl3\glad\gl.h">
+      <Filter>backends\gl3\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="src\jgfx\jgfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jgfx\backends\gl3\src\gl.c">
+      <Filter>backends\gl3\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jgfx\jgfx.c" />
+    <ClCompile Include="src\jgfx\jgfx_initgl.c" />
+  </ItemGroup>
+</Project>

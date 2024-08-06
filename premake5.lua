@@ -31,28 +31,28 @@ local function set_workspace()
 
     local has_option = false
     if _OPTIONS["directx11"] then
-        defines { "_DIRECTX11" }
+        defines { "_JGFX_DIRECTX11" }
         has_option = true
     end
 
     if _OPTIONS["directx12"] then
-        defines { "_DIRECTX12" }
+        defines { "_JGFX_DIRECTX12" }
         has_option = true
     end
 
     if _OPTIONS["vulkan"] then
-        defines { "_VULKAN" }
+        defines { "_JGFX_VULKAN" }
         has_option = true
     end
 
     if _OPTIONS["opengl"] then
-        defines { "_OPENGL" }
+        defines { "_JGFX_OPENGL" }
         has_option = true
     end
 
     if not  has_option then
         print("[ warning ] no rendering option set! using --opengl")
-        defines { "_OPENGL" }
+        defines { "_JGFX_OPENGL" }
     end
 
     filter { "system:windows" }

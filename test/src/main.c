@@ -3,8 +3,10 @@
 
 int main() {
 	glfwInit();
+	jgfx_init();
 
 	GLFWwindow* window = glfwCreateWindow(800, 600, "test", NULL, NULL);
+
 
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
